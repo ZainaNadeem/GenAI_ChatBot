@@ -1,9 +1,35 @@
-# Creating Rule-based chatbot using 10-K data from companies Microsoft, Tesla and Apple
+"""
+BCG GenAI Financial Chatbot
+Task 2 - Rule-Based Financial Chatbot
+
+Description:
+    An AI-powered chatbot that answers natural language queries
+    about financial performance of Microsoft, Tesla and Apple
+    based on 10-K filings for FY2021-2023.
+
+Supported query types:
+    - Metric lookup: revenue, net income, assets, liabilities, cash flow
+    - Growth trends: year-over-year change for any metric
+    - Comparisons: best performing company for any metric in any year
+
+Usage:
+    python chatbot.py
+
+Limitations:
+    - Only covers Microsoft, Tesla and Apple
+    - Data limited to FY2021-2023
+    - Rule-based NLP — does not understand complex sentences
+    - Cannot handle multiple companies in one query
+
+Author: BCG GenAI Consulting Team
+"""
 
 import pandas as pd
 
 # Load financial data from Task 1
-df = pd.read_csv('financial_data.csv')
+from pathlib import Path
+BASE_DIR = Path(__file__).parent
+df = pd.read_csv(BASE_DIR / 'financial_data.csv')
 
 print("Financial data loaded successfully")
 print(f"Companies available: {list(df['Company'].unique())}")
