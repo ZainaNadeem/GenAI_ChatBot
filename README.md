@@ -2,9 +2,11 @@
 
 A full-stack AI-powered chatbot that enables natural language queries on SEC 10-K financial filings for Microsoft, Tesla and Apple.
 
+<img src="https://github.com/user-attachments/assets/f463b87f-9177-46d2-8d54-996183df1e8a" width="900" />
 
 
-## Overview
+
+## Description
 
 Built as part of the BCG GenAI consulting simulation, this project transforms raw SEC filing data into an interactive financial intelligence terminal. Users can query revenue, net income, cash flow, growth trends and company comparisons using plain English.
 
