@@ -20,8 +20,6 @@ Limitations:
     - Data limited to FY2021-2023
     - Rule-based NLP — does not understand complex sentences
     - Cannot handle multiple companies in one query
-
-Author: BCG GenAI Consulting Team
 """
 
 import pandas as pd
